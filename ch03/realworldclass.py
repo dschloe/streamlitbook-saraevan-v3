@@ -44,6 +44,53 @@ class BankAccount:
         for transaction in self.transaction_history:
             print(transaction)
 
+def main():
+    print("은행 시스템에 오신 것을 환영합니다!")
+    name = input("계좌 소유자 이름을 입력하세요: ")
+    
+    while True:
+        try:
+            initial = float(input("초기 입금액을 입력하세요: ₩"))
+            if initial < 0:
+                raise ValueError("초기 입금액은 음수가 될 수 없습니다")
+            break
+        except ValueError:
+            print("올바른 양수를 입력해주세요")
+    
+    account = BankAccount(name, initial)
+    
+    while True:
+        print("\n=== 은행 메뉴 ===")
+        print("1. 입금하기")
+        print("2. 출금하기") 
+        print("3. 잔액 확인")
+        print("4. 거래내역 출력")
+        print("5. 종료")
+        
+        choice = input("\n선택하세요 (1-5): ")
+        
+        if choice == '1':
+            amount = input("입금액을 입력하세요: ₩")
+            if account.deposit(amount):
+                print("입금이 완료되었습니다!")
+                
+        elif choice == '2':
+            amount = input("출금액을 입력하세요: ₩")
+            if account.withdraw(amount):
+                print("출금이 완료되었습니다!")
+                
+        elif choice == '3':
+            print(f"\n현재 잔액: {account.get_balance()}")
+            
+        elif choice == '4':
+            account.print_statement()
+            
+        elif choice == '5':
+            print("\n은행 시스템을 이용해주셔서 감사합니다!")
+            break
+            
+        else:
+            print("잘못된 선택입니다! 다시 시도해주세요.")
 
 def main():
     print("Welcome to the Banking System!")
