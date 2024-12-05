@@ -9,12 +9,10 @@ def main():
     # Load tips dataset
     tips = sns.load_dataset('tips')
     
-    # Create a copy and add some calculated columns
     tips_display = tips.copy()
     tips_display['tip_percent'] = (tips_display['tip'] / tips_display['total_bill'] * 100).round(1)
     
     # Configure the columns
-
     column_config = {
         'total_bill': st.column_config.NumberColumn(
             'Bill Amount',
