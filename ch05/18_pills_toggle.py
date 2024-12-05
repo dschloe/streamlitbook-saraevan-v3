@@ -6,12 +6,10 @@ import pandas as pd
 def main():
     st.title("Pills and Toggle Demo")
     
-    # Load tips dataset
     tips = sns.load_dataset('tips')
     
-    # Pills example
     st.subheader("Pills Example")
-    # Changed to handle None case and removed .lower() since data is already lowercase
+    
     time_filter = st.pills("Select Time", ["All", "Lunch", "Dinner"])
     
     if time_filter is None or time_filter == "All":
@@ -22,7 +20,6 @@ def main():
     st.write(f"Showing data for: {time_filter if time_filter else 'All'}")
     st.dataframe(filtered_data)
     
-    # Toggle example
     st.subheader("Toggle Example")
     show_stats = st.toggle("Show Summary Statistics")
     
@@ -35,7 +32,6 @@ def main():
             st.metric("Max Bill", f"${filtered_data['total_bill'].max():.2f}")
             st.metric("Max Tip", f"${filtered_data['tip'].max():.2f}")
             
-    # Another toggle example with additional filters
     show_filters = st.toggle("Show Additional Filters")
     
     if show_filters:

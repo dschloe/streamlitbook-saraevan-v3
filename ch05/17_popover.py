@@ -6,17 +6,14 @@ import pandas as pd
 def main():
     st.title("Popover Demo")
     
-    # Load tips dataset
     tips = sns.load_dataset('tips')
-    
-    # Create a popover
+
     with st.popover("Show Dataset Info"):
         st.write("This dataset contains restaurant tips data")
         st.write(f"Number of records: {len(tips)}")
         st.write(f"Number of columns: {len(tips.columns)}")
         st.write("Columns:", tips.columns.tolist())
-        
-    # Create another popover with statistics
+
     with st.popover("Show Statistics"):
         col1, col2 = st.columns(2)
         with col1:
@@ -26,7 +23,6 @@ def main():
             st.metric("Max Bill", f"${tips['total_bill'].max():.2f}")
             st.metric("Max Tip", f"${tips['tip'].max():.2f}")
     
-    # Display the dataset
     st.dataframe(tips)
 
 if __name__ == "__main__":

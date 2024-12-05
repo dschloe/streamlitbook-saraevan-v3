@@ -68,6 +68,7 @@ def main():
     st.markdown("### Daily Tips Data Visualization")
     
     # Create simple visualization dataframe with 4 days
+
     viz_data = pd.DataFrame({
         'day': ['Thur', 'Fri', 'Sat', 'Sun'],
         'area_data': [
@@ -90,6 +91,7 @@ def main():
         ]
     })
     # Set observed=False to retain current behavior for pandas operations
+    st.dataframe(viz_data)
     pd.options.mode.copy_on_write = False
 
     # Calculate progress as percentage (0-100%)
