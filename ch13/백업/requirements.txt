@@ -1,0 +1,29 @@
+# Data Processing & ML
+pandas
+numpy
+scikit-learn
+
+matplotlib
+seaborn
+xgboost
+joblib
+
+
+# Backend
+fastapi
+uvicorn
+python-multipart
+pydantic
+pydantic-settings
+
+# Frontend
+streamlit
+plotly
+
+# Testing
+pytest
+
+# Development
+black
+flake8
+isort
