@@ -24,7 +24,7 @@
 - 먼저 Repo를 복사 한 후, 아래와 같이 입력합니다.
 
 ```bash
-git clone https://github.com/dschloe/streamlitbook-saraevan2.git
+git clone https://github.com/dschloe/streamlitbook-saraevan3.git
 ```
 
 - 폴더 최상위 경로에서 가상환경을 설치합니다. 
@@ -72,7 +72,6 @@ streamlit run app.py
 
 ## 온라인 강의
 - Youtube : https://www.youtube.com/@darkgreenchloeJJ-pe6gq 
-- Udemy : https://www.udemy.com/course/st-dashboard/?referralCode=A570882A38B5A438FB7E
 - 인프런 : https://inf.run/YPniH
 
 ## License
