@@ -72,7 +72,7 @@ streamlit run app.py
 
 ## 온라인 강의
 - Youtube : https://www.youtube.com/@darkgreenchloeJJ-pe6gq 
-- 인프런 : https://inf.run/YPniH
+- 인프런 : TBD
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
