@@ -4,7 +4,7 @@
   + 부크크 (PDF) : 
   + 교보문고 : https://product.kyobobook.co.kr/detail/S000215755814
   + 예스 24 : 
-  + 알라딘 : 
+  + 알라딘 : https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=358041499
   + 책소개 : https://dschloe.github.io/ds-projects/2024/01/book_intro/
 ![](book.png)
 
