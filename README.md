@@ -1,9 +1,9 @@
 ## 교재 구매
 - 판매링크
   + 부크크 (종이책) : https://bookk.co.kr/bookStore/67930908f3250118b233df2d
-  + 부크크 (PDF) : 
-  + 교보문고 : https://product.kyobobook.co.kr/detail/S000215755814
-  + 예스 24 : 
+  + 부크크 (PDF) : TBD
+  + 교보문고(온라인인) : https://product.kyobobook.co.kr/detail/S000215755814
+  + 예스 24 : https://www.yes24.com/Product/Goods/142704643
   + 알라딘 : https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=358041499
   + 책소개 : https://dschloe.github.io/ds-projects/2024/01/book_intro/
 ![](book.png)
