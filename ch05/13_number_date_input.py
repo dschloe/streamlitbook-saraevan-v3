@@ -14,6 +14,8 @@ def main():
     end_date = st.sidebar.date_input("End date", value=pd.to_datetime('today'))
 
     data = yf.download(ticker, start=start_date, end=end_date)
+    data.columns = data.columns.droplevel(1)
+    
     chart_type = st.sidebar.radio("Select chart type", ("Candlestick", "Line"))
 
     candlestick = go.Candlestick(x=data.index, open=data['Open'], high=data['High'], low=data['Low'], close=data['Close'])
